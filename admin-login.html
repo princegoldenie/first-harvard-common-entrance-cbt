@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>
+Admin Login - First Harvard Academy
+</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<h1>
+FIRST HARVARD ACADEMY
+</h1>
+
+
+<h2>
+Admin Login
+</h2>
+
+
+
+<input 
+type="password"
+id="adminPassword"
+placeholder="Enter Admin Password"
+>
+
+
+
+<button onclick="adminLogin()">
+
+Login
+
+</button>
+
+
+
+<p id="error"></p>
+
+
+
+</div>
+
+
+
+<script>
+
+
+function adminLogin(){
+
+
+let password =
+document.getElementById("adminPassword").value;
+
+
+
+// CHANGE PASSWORD HERE
+
+let correctPassword =
+"FHA2026";
+
+
+
+if(password === correctPassword){
+
+
+localStorage.setItem(
+"adminLogin",
+"true"
+);
+
+
+
+window.location.href="admin.html";
+
+
+}
+
+
+else{
+
+
+document.getElementById("error").innerHTML =
+"Incorrect Password";
+
+
+}
+
+
+}
+
+
+</script>
+
+
+
+</body>
+
+</html>

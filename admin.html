@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>
+First Harvard Academy Admin Dashboard
+</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="admin-container">
+
+
+<h1>
+FIRST HARVARD ACADEMY
+</h1>
+
+
+<h2>
+COMMON ENTRANCE CBT ADMIN DASHBOARD
+</h2>
+
+
+
+<div class="stats">
+
+
+<div class="card">
+
+<h3>Total Students</h3>
+
+<p id="totalStudents">
+0
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Average Score</h3>
+
+<p id="averageScore">
+0
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Total Exams</h3>
+
+<p id="totalExams">
+0
+</p>
+
+</div>
+
+
+</div>
+
+
+
+
+
+<input 
+id="search"
+placeholder="Search student name or exam number"
+onkeyup="searchResult()"
+>
+
+<button onclick="logout()">
+
+Logout
+
+</button>
+
+
+<table>
+
+
+<thead>
+
+<tr>
+
+<th>Name</th>
+
+<th>Exam Number</th>
+
+<th>Subject</th>
+
+<th>Score</th>
+
+<th>Total</th>
+
+<th>Date</th>
+
+
+</tr>
+
+</thead>
+
+
+<tbody id="resultTable">
+
+
+</tbody>
+
+
+</table>
+
+
+
+</div>
+
+
+
+<script>
+
+
+if(localStorage.getItem("adminLogin") !== "true"){
+
+window.location.href="admin-login.html";
+
+}
+
+
+</script>
+
+<script>
+
+function logout(){
+
+localStorage.removeItem("adminLogin");
+
+window.location.href="index.html";
+
+}
+
+</script>
+
+<script src="admin.js"></script>
+
+</body>
+
+</html>

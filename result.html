@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>CBT Result</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="result-box">
+
+
+<h1>
+FIRST HARVARD ACADEMY
+</h1>
+
+
+<h2>
+COMMON ENTRANCE CBT EXAMINATION - 2026
+</h2>
+
+
+<hr>
+
+
+<p>
+Student Name:
+</p>
+
+<h3 id="studentName"></h3>
+
+
+
+<p>
+Exam Number:
+</p>
+
+<h3 id="examNumber"></h3>
+
+
+
+<p>
+Subject:
+</p>
+
+<h3 id="subject"></h3>
+
+
+
+<h1>
+Your Score
+</h1>
+
+
+<h2 id="score"></h2>
+
+
+<button onclick="nextExam()">
+Start Next Exam
+</button>
+
+<h2 id="remark"></h2>
+
+
+</div>
+
+
+
+<script>
+
+
+let name =
+localStorage.getItem("name");
+
+
+let examNumber =
+localStorage.getItem("examNumber");
+
+
+let subject =
+localStorage.getItem("subject");
+
+
+let score =
+localStorage.getItem("score");
+
+
+
+document.getElementById("studentName").innerHTML=name;
+
+
+document.getElementById("examNumber").innerHTML=examNumber;
+
+
+document.getElementById("subject").innerHTML=subject;
+
+
+document.getElementById("score").innerHTML=
+score+" / 100";
+
+
+
+if(score>=50){
+
+document.getElementById("remark").innerHTML=
+"PASS";
+
+}
+
+else{
+
+document.getElementById("remark").innerHTML=
+"FAIL";
+
+}
+
+function nextExam(){
+
+// remove old exam data
+
+localStorage.removeItem("score");
+
+
+// return student to subject selection page
+
+window.location.href="index.html";
+
+
+}
+
+</script>
+
+
+</body>
+
+</html>

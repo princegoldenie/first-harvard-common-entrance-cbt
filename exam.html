@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>
+First Harvard Academy Common Entrance CBT
+</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="questions.js" defer></script>
+<script src="script.js" defer></script>
+
+</head>
+
+
+<body>
+
+
+<div class="exam-wrapper">
+
+
+<!-- HEADER -->
+
+<div class="exam-header">
+
+
+<h1 id="typing-title"></h1>
+
+
+<h3>
+FIRST HARVARD ACADEMY
+</h3>
+
+
+<div class="student-info">
+
+<p>
+Exam Number:
+<span id="student-number"></span>
+</p>
+
+
+<p>
+Subject:
+<span id="subject-title"></span>
+</p>
+
+
+</div>
+
+
+<div class="timer-box">
+
+Time Remaining:
+
+<span id="timer">
+30:00
+</span>
+
+
+</div>
+
+
+</div>
+
+
+
+
+<!-- PROGRESS -->
+
+<div class="progress-container">
+
+<div id="progress-bar"></div>
+
+</div>
+
+
+
+
+<!-- QUESTION AREA -->
+
+
+<div class="question-box">
+
+
+<h2 id="question-number">
+Question 1 / 50
+</h2>
+
+
+<h3 id="question">
+
+Loading Question...
+
+</h3>
+
+
+
+<div id="options">
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<!-- BUTTONS -->
+
+
+<div class="button-area">
+
+
+<button onclick="previousQuestion()">
+
+Previous
+
+</button>
+
+
+
+<button onclick="nextQuestion()">
+
+Next
+
+</button>
+
+
+
+<button onclick="addExtraTime()">
+
+Add Extra Time (+5 Minutes)
+
+</button>
+
+
+
+<button onclick="submitExam()">
+
+Submit Exam
+
+</button>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</body>
+
+</html>

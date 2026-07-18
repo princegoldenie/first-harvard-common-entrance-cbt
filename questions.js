@@ -1577,7 +1577,7 @@ correct:"c"
 ],
 
 
-"generalpaper": [
+"generalPaper": [
 {
     question: "Nigeria is located in which part of Africa?",
     a: "North Africa",

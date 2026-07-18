@@ -95,7 +95,7 @@ let studentAnswers=[];
 
 let score=0;
 
-let time=1800; // 30 minutes
+let time=2700; // 45minutes
 
 let timer;
 

@@ -1,7 +1,7 @@
 const questionBank = {
 
 
-"MathQuantitative":[
+"mathQuantitative":[
 
 {
 question:"What is the place value of the digit 7 in the number 4,732?",
